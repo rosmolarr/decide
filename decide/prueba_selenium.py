@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
 options = webdriver.ChromeOptions()
-options.headless = True
+options.headless = False
 driver = webdriver.Chrome(options=options)
 driver.get("https://www.google.com/")
 print('Title: %s' % driver.title)
